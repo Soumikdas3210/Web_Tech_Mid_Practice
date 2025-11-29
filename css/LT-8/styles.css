@@ -1,0 +1,27 @@
+.box{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+#visible{
+    /* By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box */
+    overflow: visible;
+    background-color: white;
+}
+#hidden{
+    /*With the hidden value, the overflow is clipped, and the rest of the content is hidden*/
+    overflow: hidden;
+    background-color: white;
+}
+#scroll{
+    /*With the scroll value, horizontal and vertical scrollbars are always added. User must scroll to see all content regardless of whether it overflows or not*/
+    overflow: scroll;
+    background-color: white;
+}
+#auto{
+    /*The auto value is similar to scroll, but it adds scrollbars only when necessary*/
+    overflow: auto;
+    background-color: white;
+}
