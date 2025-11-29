@@ -1,0 +1,18 @@
+body {
+    overflow: scroll;
+}
+.contact-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 20px;
+    border: 2px solid lawngreen;
+    border-radius: 10px;
+    z-index: 100;
+    
+}
+.contact-widget:hover {
+    background-color: lightyellow;
+    
+}
+
