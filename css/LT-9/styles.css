@@ -1,0 +1,19 @@
+.sidebar, .main_content, .advertisement {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px 8px;
+}
+.sidebar {
+    width: 15%;
+    background-color: burlywood;
+}
+.main_content {
+    width: 55%;
+    background-color: lightgray;
+}
+.advertisement {
+    width: 15%;
+    background-color: lightgreen;
+}
