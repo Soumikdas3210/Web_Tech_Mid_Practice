@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Student Registration Form</title>
+    <script src="FormValidation.js" defer></script>
+
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+    <form onsubmit="return validateForm()">
+
+        <label for="nameTF">Student Name:</label><br>
+        <input type="text" id="nameTF" name="nameTF"><br><br>
+        <span style="color:red" id="nameERR"></span><br><br>
+
+        <label for="emailTF">Email:</label><br>
+        <input type="text" id="emailTF" name="emailTF"><br><br>
+        <span style="color:red" id="emailERR"></span><br><br>
+
+        <label for="passwordTF">Password:</label><br>
+        <input type="password" id="passwordTF" name="passwordTF"><br><br>
+        <span style="color:red" id="passwordERR"></span><br><br>
+
+        <label for="confirmPasswordTF">Confirm Password:</label><br>
+        <input type="password" id="confirmPasswordTF" name="confirmPasswordTF"><br><br>
+        <span style="color:red" id="confirmPasswordERR"></span><br><br>
+
+        <label for="phoneNumberTF">Phone Number:</label><br>
+        <input type="text" id="phoneNumberTF" name="phoneNumberTF"><br><br>
+        <span style="color:red" id="phoneNumberERR"></span><br><br>
+
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+
+</html>
