@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Form Fields</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h2>Smart Registration Form</h2>
+
+    <label>Select User Type:</label>
+    <select id="userType">
+        <option value="">-- Select --</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+    </select>
+
+    <br><br>
+
+    <div id="rollDiv" style="display:none;">
+        <label>Roll Number:</label>
+        <input type="text" id="rollInput">
+    </div>
+
+    <br>
+
+    <div id="deptDiv" style="display:none;">
+        <label>Department:</label>
+        <input type="text" id="deptInput">
+    </div>
+
+</body>
+</html>
