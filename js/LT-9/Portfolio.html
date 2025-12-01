@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Portfolio</title>
+
+    <style>
+
+        nav a {
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #greeting {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        #contactForm input, #contactForm textarea {
+            width: 300px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body id="page">
+
+    <h1>My Portfolio</h1>
+
+    <div id="greeting"></div>
+
+    <button id="themeBtn">Switch to Dark Mode</button>
+
+    <hr>
+
+    <nav>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('projects')">Projects</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate developer learning Web Technologies.</p>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>My Projects</h2>
+        <p>Here are some of my works in web development and JavaScript.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <p id="nameError" class="error"></p>
+
+            <input type="text" id="email" placeholder="Your Email">
+            <p id="emailError" class="error"></p>
+
+            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+            <p id="messageError" class="error"></p>
+
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
